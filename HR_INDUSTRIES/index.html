@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color:#e2e7e6 ;
+        }
+
+     
+        /* Basic styles to demonstrate scrolling */
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px; /* Increased height for scrolling */
+        }
+
+        /* .target-section {
+            margin-top: 1000px; 
+            height: 500px;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+    */
+    </style>
+</head>
+<body>
+
+   
+    <header> 
+        <div class="navbar">
+            <div class="nav-logo ">
+                <div class="logo">
+                    <img src="img\logo.jpeg"style="height: 65px ; padding-left: 10px;">
+                </div>
+
+                  
+                        <a href="#Home" style="margin-left:1000px; margin-top: 20px;"></i>Home</a>
+                        <a href="#About" style="margin-top:20px ; margin-left: 30px;"></i>About</a>
+                        <a href="#service" id="scrollButton" style="margin-top: 20px; margin-left: 30px;">Services</a>
+                         <!-- <a href="#service" style="margin-top: 20px; margin-left: 30px;"></i>Services</a> -->
+                        <a href="#contact"style="margin-top: 20px; margin-left: 30px;"></i>Contact </a>
+                   
+              
+
+                 <!-- <div class="nav-signin">
+                    <p class="f1" style="margin-left: 1000px; margin-top: 25px;">Home</p>                    
+                </div>
+
+                <div class="nav-return">
+                    <p class="f2" style="margin-left: 40px; margin-top: 25px;">About</p>
+                </div>  
+
+                <div class="nav-order">
+                    <p class="f3" style="margin-left: 40px; margin-top: 25px;">Services</p>
+                </div> 
+                               
+                <div class="nav-order">
+                    <p class="f4" style="margin-left: 40px; margin-top: 25px;">Contact</p>
+                </div>              
+            </div>          
+        </div>   -->
+    </header>
+ 
+    <img src="img\image1.jpg" style="height: 370px; width: 100%;">
+
+    <div>
+        <h1 style="text-align: center; margin-top: 40px; font-size: 39px; color: rgb(76, 76, 230);">About HR Industries</h1>
+
+        <h3 style="text-align: center; margin-top: 50px;">Manufacturing of precision tube parts & bright borr and assy for Automotive & Non Automotive Application.</h3>
+
+        <section id="About"> 
+            
+            <div class="divider"></div>
+            
+            <div class="About-col">
+
+            <div class="img-col">
+                <img src="img\download.jpeg" alt="..." style="margin-left: 200px; ">
+            </div>
+
+            <div class="info-col">
+                
+                
+            <div class="icon-list-col"> 
+                <!----left side icon------>
+                 <div class="icon-list " style="margin-left: 200px; font-size: larger;">
+                    <ul>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Factory Name:</strong> <span>HR Industries</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Year of Establishment:</strong> <span>15/02/2021</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Factory Address:</strong> <span>67 Plot No :75 MIDC Waluj,Sambhajinagar</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>City:</strong> <span>Sambhajinagar,Maharashtra,India</span></li>
+                        
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Mobile No:</strong> <span>9766617037/8007190042</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>GST Registration:</strong> <span>27jMHPS4931J1ZD</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Email:</strong> <span>hrindustries3191@gmail.com</span></li>
+                        
+                    </ul>
+
+                
+                        
+                   
+                </div>
+            </div>
+           </div>  
+        </div>
+        </section>
+      </div> 
+
+      <h2 style="color:  rgb(76, 76, 230); text-align: center; font-size: 39px;  margin-bottom: 30px; text-align: center;">M/C and Tool Room Details</h2>
+      <section id="fact">
+
+        
+        <div class="divider"></div>
+        
+        <div class="fact-row" style="margin-left: 190px;">
+
+            <!---fact box 1------->
+            <div class="fact-box">
+               
+                <strong>50+</strong>
+                <p>Happy Clients</p>
+            </div>
+
+            <!---fact box 2------->
+            <div class="fact-box">
+               
+                <strong>10+</strong>
+                <p>Machines</p>
+            </div>
+            
+            <!-----fact box 3------->
+            <div class="fact-box">
+               <strong>7+</strong>
+                <p>Quantity</p>
+            </div>
+
+            <div class="fact-box">
+                <strong>5+</strong>
+                 <p>Instrument</p>
+             </div>
+ 
+           
+        </div>
+    </section>
+       
+<div>
+    
+    
+
+    <div class="target-section" id="targetSection">
+       
+    </div>
+
+    <script>
+        // JavaScript function to scroll to target section
+        document.getElementById('scrollButton').addEventListener('click', function() {
+            document.getElementById('targetSection').scrollIntoView({
+                behavior: 'smooth' // Smooth scrolling
+            });
+        });
+    </script>
+    <h1 style="text-align: center; margin-top: 30px; color: rgb(76, 76, 230);font-size: 39px;">Our Services</h1>
+
+</div>
+    <div class="shop-section">
+
+        
+        
+           <!-- box1 -->
+        <div class="box1 box">
+            <div>
+                <img src="img\nut bolt.jpg" style="width: 100%; height: 220px;">
+                <h4 style="font-size: 20px; margin-left: 10px;">Nuts and bolts</h4>
+                <p style="margin-left: 10px; margin-top: 10px;">Nuts and bolts are essential fastening hardware used in a wide range of applications, 
+                    typically to hold components together securely. Here's a breakdown of each:</p>
+            </div>
+            <div>
+                
+                 </div>
+
+    </div>
+              
+             
+        <div class="box2 box " style="height: 360px;">  
+                <div>
+                    <img src="img\metal bolt.jpg" style="height: 220px; width: 100%;">
+                    <h4 style="font-size: 20px; margin-left: 10px;">Metal bolts 3D</h4>
+                    <p  style="margin-left: 10px; margin-top: 10px; margin-right: 10px;">A metal bolt is a cylindrical fastening device with external threads along a portion or the entirety of its shaft, 
+                        designed to work with a nut to clamp two or more objects together. 
+                    
+                    </p>
+                </div>            
+            </div>
+
+            <!-- box3 -->
+            <div class="box3 box">
+                
+            
+                    <div >
+                        <img src="img\metal nut.jpg" style="height: 220px; width: 100%;">
+                        <h4 style="font-size: 20px; margin-left: 10px;">Metal Nuts</h4>
+                        <p style="margin-left: 10px; margin-top: 10px; margin-right: 10px;">Metal nuts are fastening components with internal threading that pair with bolts to secure materials together. 
+                            They come in a variety of shapes, sizes, and materials, designed for different mechanical, construction, and industrial applications</p>
+                    </div> 
+
+                   
+
+
+                    
+                    
+                </div>
+
+
+        <!-- <div class="box3 box">box3</div>
+        <div class="box4 box">box4</div> -->
+        
+                
+    </div> 
+
+    <h1 style="text-align: center; margin-top: 20px; font-size: 39px; color: rgb(76, 76, 230);">Contact Us</h1>
+    
+    <div class="container">
+        
+        
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <!-- <div>
+        <h1 style="text-align: center; margin-top: 20px; font-size: 39px; color: rgb(76, 76, 230);">About HR Industries</h1>
+
+        <h3 style="text-align: center; margin-top: 30px;">Manufacturing of precision tube parts & bright borr and assy for Automotive & Non Automotive Application.</h3>
+
+        <section id="About"> 
+            
+            <div class="divider"></div>
+            
+            <div class="About-col">
+
+            <div class="img-col">
+                <img src="img\download.jpeg" alt="..." style="margin-left: 200px; margin-top: 30px;">
+            </div>
+
+            <div class="info-col">
+                
+                
+            <div class="icon-list-col"> -->
+                <!----left side icon------>
+                <!-- <div class="icon-list " style="margin-left: 200px; font-size: larger; margin-top: 30px;">
+                    <ul>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Factory Name:</strong> <span>HR Industries</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Year of Establishment:</strong> <span>15/02/2021</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Factory Address:</strong> <span>67 Plot No :75 MIDC Waluj,Sambhajinagar</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>City:</strong> <span>Sambhajinagar,Maharashtra,India</span></li>
+                        
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Mobile No:</strong> <span>9766617037/8007190042</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>GST Registration:</strong> <span>27jMHPS4931J1ZD</span></li>
+                        <li><i class="fa-solid fa-anglr-right"></i> <strong>Email:</strong> <span>hrindustries3191@gmail.com</span></li>
+                        
+                    </ul>
+
+                
+                        
+                   
+                </div>
+            </div>
+           </div>  
+        </div>
+        </section>
+      </div> -->
+
+</body>
+</html>  
